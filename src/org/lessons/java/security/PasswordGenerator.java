@@ -31,7 +31,10 @@ public class PasswordGenerator {
 		System.out.print("insierire il proprio anno di nascita a numero");
 		int year = sc.nextInt();
 		
+		sc.close();
 		
-		System.out.print("la tua psw è:" + name + "-" + lastname + "-" + color + "-" + day + "-" + month + "-" + year);
+		System.out.print("la tua psw è:" + name + "-" + lastname + "-" + color + "-" + (day + month  + year));
+		
+		//TODO: aggiungere i controlli per gli input testuali
 	}
 }
